@@ -1,6 +1,8 @@
 # Coding-exercise
 Within this repo, I have added a python script called hospital_compcare_search. Please run this from the command line, use the -h option to get more details on the input requirements.
 
+## Example:_  ./hospital_compare_search.py -z 01742 -nf 10 -mor 1 -v
+
 ## Execution: 
 * The code can be run from the terminal of an Ubuntu or macOS/OSX machine. 
 * Inputs are specified via command-line arguments (e.g., see the argparse python parser). 
@@ -9,9 +11,9 @@ Within this repo, I have added a python script called hospital_compcare_search. 
 
 ## Inputs: 
 * The following input arguments can be passed to the interface: 
-* zip_code – required. The five-digit zip code that geographically anchors the search. 
-* num_facilities – optional (default: 20). The maximum number of facilities returned by the search. 
-* min_overall_rating – optional (default: no restriction). The minimum allowable overall quality rating for each returned hospital. The overall rating for each hospital is listed in the “Hospital General Information” file.
+* -z or --zip_code – required. The five-digit zip code that geographically anchors the search. 
+* -nf or --num_facilities – optional (default: 20). The maximum number of facilities returned by the search. 
+* -mor or --min_overall_rating – optional (default: no restriction). The minimum allowable overall quality rating for each returned hospital. The overall rating for each hospital is listed in the “Hospital General Information” file.
 
 ## Outputs: 
 * Outputs should be returned as a properly-formatted human-readable JSON list of hospital dicts. The keys for each hospital dict should be as follows:
